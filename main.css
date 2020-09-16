@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 5rem 1fr 20rem;
+}
+header, h1{
+    align-self: center;
+    background-color: whitesmoke;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    padding-left: 7%;
+    border-bottom: 3px solid black;
+    line-height: 0.6;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #0577C9;
+}
+
+.penTools{
+    width: 100%;
+    height: 35rem;
+    background-color: whitesmoke;
+    margin-bottom: 2rem;
+} 
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    width: 15%;
+    margin: 2rem 0;
+}
+
+button{
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1.6rem;
+    /* border: 3px ridge gray; */
+    /* border-radius: %; */
+    box-shadow: 4px 2px 7px rgba(0, 0, 0, .3);
+    outline: none;
+    margin: 2rem 0;
+}
+
+button:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #1E1E1E;
+    box-shadow: 4px 2px 7px rgba(245,245, 245, .6);
+    transition: .8s ease;
+}
+
+#canvas{
+    color: black;
+    /* border: 2px solid black; */
+    box-shadow: 4px 2px 7px rgba(0, 0, 0, .3);
+    background-color: whitesmoke;
+    align-self: center;
+    cursor: pointer;
+    margin: 2.5rem 0;
+}
+
+footer{
+    color: whitesmoke;
+    background-color: #1E1E1E;
+    font-size: 1.6rem;
+}
